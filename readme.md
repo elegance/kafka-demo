@@ -39,4 +39,4 @@ $ docker-compose up --help
 
 
 #### demos
-* [队列模式/广播模式](src/main/java/org/orh/t1/readme.md)
+* [队列模式/广播模式](src/main/java/org/orh/t1/)
