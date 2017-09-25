@@ -8,6 +8,7 @@
 * 运行`CatConsumer.java`，从`消费者`控制台分别输入 `fishConsumer2`/`group1`回车
 * 回到`生产者控制台`, 重复的进行信息输入与回车，可以得到以下效果：
     * **形成了队列模式，即`fish-topic`只会有一个消费者会消费消息 (因为消费者都是在同一个group1中，只会有一个消费者消费到消息)**
+    * 另外`fishConsumer1`将不再消费消息，因为`fish-topci`只是有默认一个partition，**一个partition只能被同group中的一个消费者消费，即一个group中，消费process不应多余消费的topic的partition数量**
 
 #### 3. 基于以上步骤基础，新增消费者并且指定其为group2
 * 运行`CatConsumer.java`，从`消费者`控制台分别输入 `fishConsumer3`/`group2`回车
